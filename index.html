@@ -4,11 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Validador de Formulários Simples</title>
 </head>
 
 <body>
+    <div class="container">
+        <img src="">
+        <form id="mainForm" novalidate>
+            <h2>Validador de Formulários</h2>
+            <div class="form-control">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Digite seu nome" autocomplete="off">
+                <i class="icon"></i>
+            </div>
 
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email" autocomplete="off">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" placeholder="Digite seu telefone" autocomplete="off">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha" autocomplete="off">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="message">Mensagem</label>
+                <textarea id="message" placeholder="Digite uma mensagem"></textarea>
+                <i class="icon"></i>
+            </div>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Enviado!</h2>
+            <p>Seu formulário foi enviado com sucesso.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8e4a25e86e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
